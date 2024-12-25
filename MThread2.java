@@ -12,7 +12,7 @@ class MultiThreadingTwo implements Runnable
         }
     }
 }
-public class mthread2
+public class MThread2
 {
     public static void main(String[] args)
     {
