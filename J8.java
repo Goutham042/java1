@@ -1,30 +1,22 @@
 package pkg1;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
-class Human{
-    public void job(){
-         System.out.println("Worhing professional");
+public class M8 {
+public static void main(String[] args) {
+    try {
+        File f1 = new File("src/namess.txt");
+        Scanner sc1 = new Scanner(f1);
+        Tools1 t1 = new Tools1();
+        while (sc1.hasNextLine()) {
+            String name = sc1.nextLine();
+            System.out.println(t1.reverse(name));
+        }
+        sc1.close();
+    } catch (FileNotFoundException e) {
+        System.out.println("The file 'namess.txt' was not found.");
+        e.printStackTrace();
     }
 }
-class Teacher extends Human{
-    public void job(){
-         System.out.println("Teacher");
-    }
-}
-class Doctor extends Human{
-    public void job(){
-         System.out.println("Doctor");
-    }
-}
-
-public class J8 {
-     public static void main(String[] args){
-        Human amar=new Human();
-        Teacher babu=new Teacher();
-        Doctor chandra= new Doctor();
-        Human dinesh=new Doctor();
-        amar.job();
-        babu.job();
-        chandra.job();
-        dinesh.job();
-     }
 }
