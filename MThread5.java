@@ -17,7 +17,7 @@ class MultiThreadingFive implements Runnable
         }
     }
 }
-public class mthread5
+public class MThread5
 {
     public static void main(String[] args)
     {
