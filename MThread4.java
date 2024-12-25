@@ -17,7 +17,7 @@ class MultiThreadingFour extends Thread
         }
     }
 }
-public class mthread4
+public class MThread4
 {
     public static void main(String[] args)
     {
