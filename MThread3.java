@@ -12,7 +12,7 @@ class MultiThreadingThree extends Thread
         }
     }
 }
-public class mthread3
+public class MThread3
 {
     public static void main(String[] args)
     {
