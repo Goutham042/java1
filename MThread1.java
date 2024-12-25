@@ -12,7 +12,7 @@ class MultiThreadingOne extends Thread
         }
     }
 }
-public class mthread1
+public class MThread1
 {
     public static void main(String[] args)
     {
